@@ -21,10 +21,11 @@ public class Endereco {
 
     @Override
     public String toString() {
-        return " cep= " + cep + '\n' +
-                " rua= " + rua + '\n' +
-                " bairro= " + bairro + '\n' +
-                " cidade= " + cidade + '\n' +
-                " estado= " + estado ;
+        return " =================================" + '\n' +
+                " CEP: " + cep + '\n' +
+                " Rua: " + rua + '\n' +
+                " Bairro: " + bairro + '\n' +
+                " Cidade: " + cidade + '\n' +
+                " Estado: " + estado ;
     }
 }

@@ -31,9 +31,7 @@ public class Conect {
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
             Validador valida= new Validador();
-            if(valida.validaErro(response.body())) {
-                return response.body();
-            }else{return "CEP NÃO ENCONTRADO";}
+            return response.body();
             
         } catch (IOException e) {
             return "ERRO "+e.getMessage();
